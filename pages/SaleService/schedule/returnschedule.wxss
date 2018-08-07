@@ -1,0 +1,269 @@
+/* pages/SaleService/schedule/returnschedule.wxss */
+.clearfix:after{
+  clear: both;
+  display: block;
+  content: '';
+  height: 0;
+}
+view{
+  font-family: PingFang-SC-Regular;
+}
+.header{
+ 
+  margin-top: 20rpx;
+  width: 100%;
+  margin-bottom: 20rpx;
+	background-color:#fafafa;
+}
+.header view{
+   float: left;
+  color: #007aff;
+  font-size: 24rpx;
+  height: 68rpx;
+  width: 20%;
+  float: left;
+  line-height: 68rpx;
+  text-align: center;
+  position: relative;
+  z-index: 11;
+  border-top: 1px solid #dddddd;
+  border-bottom: 1px solid #dddddd;
+}
+.header image{
+  position: absolute;
+  width: 24rpx;
+  height: 68rpx;
+  z-index: 99;
+  opacity: 1;
+}
+/* 退货信息 */
+.context{
+  padding: 32rpx 32rpx 0;
+  background: #fff;
+}
+.container{
+  padding-bottom:20rpx;
+
+}
+.container image{
+  width: 144rpx;
+  height: 144rpx;
+  margin-right: 20rpx;
+  float: left;
+}
+.container-right{
+  overflow: hidden;
+  float: right;
+  position: relative;
+   top:34rpx;
+}
+.intro view:nth-of-type(1){
+  color: #353535;
+  font-size: 32rpx;
+  margin-bottom: 16rpx;
+}
+.intro{
+   width: 410rpx;
+   float: left;
+   position: relative;
+   top:34rpx;
+}
+.intro view{
+  width: 410rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.intro view:nth-of-type(2){
+  color: #888888;
+  font-size: 28rpx;
+}
+/* 评价等级 */
+.imgselect{
+   display: flex;
+   position:relative;
+   top:9rpx;
+}
+.pl{
+  color: #353535;
+  font-size: 32rpx;
+  margin-right: 20rpx;
+}
+.imgselect image{
+  width: 32rpx;
+  height: 32rpx;
+  margin-right: 16rpx;
+}
+.gradetext{
+  color: #353535;
+  font-size: 32rpx;
+}
+.question{
+  color: #888888;
+  font-size: 32rpx;
+  margin: 42rpx 0 32rpx 0;
+}
+.cancel{
+   padding: 37rpx 32rpx;
+   background: #fff;
+   margin-top: 20rpx;
+   border: solid 1px #dbdbdb;
+   margin-bottom: 20rpx;
+}
+.cancel text{
+  float: left;
+  font-size:32rpx;
+  color: #cccccc;
+}
+.cancel image{
+  float: right;
+  width: 28rpx;
+  height: 14rpx;
+  position:relative;
+  top:15rpx;
+  
+}
+.q-list{
+
+}
+.q-list text{
+  color: #888888;
+  font-size: 24rpx;
+  display: inline-block;
+  width: 124rpx;
+  height: 48rpx;
+  border: solid 1px #dbdbdb;
+  line-height: 48rpx;
+  text-align: center;
+  margin-right: 32rpx;
+  margin-bottom: 32rpx;
+}
+.evaluation{
+  position: relative;
+  margin-bottom: 32rpx;
+}
+.content{
+  width: 100%;
+  height:368rpx;
+  border: 1px solid #cccccc;
+  color: #cccccc;
+  font-size: 30rpx;
+  padding: 20rpx;
+  box-sizing: border-box;
+}
+.count{
+  position: absolute;
+  right: 20rpx;
+  bottom: 20rpx;
+  color: #353535;
+  font-size: 30rpx;
+}
+
+.weui-uploader__bd {
+margin-right:-9px;
+padding-bottom:32rpx;
+}
+.weui-uploader__input-box {
+float:left;
+position:relative;
+margin-right:9px;
+
+width:77px;
+height:77px;
+border:1px dashed #D9D9D9;
+
+}
+.weui-uploader__input {
+position:absolute;
+z-index:1;
+top:0;
+left:0;
+width:100%;
+height:100%;
+opacity:1;
+
+}
+
+.weui-uploader__input view:nth-of-type(1) {
+position:absolute;
+z-index:1;
+top:50%;
+width:50%;
+left: 50%;
+height: 4rpx;
+margin-left: -25%;
+margin-top: -2rpx;
+background: #cccccc;
+opacity:1;
+
+}
+.weui-uploader__input view:nth-of-type(2) {
+position:absolute;
+z-index:1;
+left:50%;
+width:4rpx;
+top:50%;
+margin-top: -25%;
+height:50%;
+margin-left: -2rpx;
+background: #cccccc;
+opacity:1;
+
+}
+.weui-uploader__file {
+float:left;
+margin-right:9px;
+margin-bottom:9px;
+
+}
+.weui-uploader__img {
+display:block;
+width:79px;
+height:79px;
+margin-bottom: 28rpx;
+position: relative;
+overflow: inherit;
+border: 1px solid #cccccc;
+}
+.del{
+  position: absolute;
+  width: 28rpx;
+  height: 28rpx;
+  right: -14rpx;
+  top: -14rpx;
+}
+.uploadimg{
+  margin-bottom: 20rpx;
+}
+.submit{
+  width: 100%;
+  height: 100rpx;
+  margin-top: 18rpx;
+  line-height: 100rpx;
+   text-align: center;
+   font-size: 30rpx;
+   color: #fff;
+   background: #ffcc00;
+   position: fixed;
+   bottom: 0;
+   z-index: 999;
+}
+.look_process{
+   height: 180rpx;
+   width: 100%;
+   position: relative;
+   margin-bottom: 100rpx;
+}
+.look{
+  position: relative;
+  width: 270rpx;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  top:48rpx;
+  color: #888888;
+  font-size: 30rpx;
+}
+.look text{
+  color: #353535;
+}

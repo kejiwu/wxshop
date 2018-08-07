@@ -1,0 +1,17 @@
+/* pages/aboutus/aboutus.wxss */
+page{
+  background: #fff;
+}
+.aboutus{
+    padding: 0 32rpx;
+}
+.aboutus image{
+  width: 100%;
+  margin-bottom: 46rpx;
+}
+.aboutus view{
+   font-size: 30rpx;
+   color: #666666;
+   line-height: 54rpx;
+   margin-bottom: 36rpx;
+}

@@ -1,0 +1,94 @@
+/* pages/red_packets/red_ackets.wxss */
+view,image,text,navigator {
+box-sizing:content-box;
+padding:0;
+margin:0;
+color: #fff;
+}
+
+.tab-box {
+  background-color: rgba(250, 250, 250, 0.98);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.tab-item.selected { 
+	color: #000000;
+}
+.tab-item {
+  border-bottom: 0.67rpx solid #dbdbdb;
+  width: 33.3%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32rpx;
+  color: #888;
+  font-family: "PingFang-SC-Regular";
+}
+.tab-item>text {
+  padding: 16rpx 0;
+  color: #888;
+  width: auto;
+  border-bottom: 4rpx solid transparent;
+}
+.tab-item>text.selected {
+  border-bottom: 4rpx solid #000;
+}
+
+.red-unused {
+  padding: 32rpx 8rpx;
+  display: inline-block;
+  background: #fff;
+  height: 90vh;
+}
+/* 未使用内容 start */
+.unused-item {
+  padding: 0 32rpx;
+  color: #fff;
+  font-family: "PingFang-SC-Regular";
+  float: left;
+  margin: 32rpx 3.9rpx 0;
+}
+.unused-item>text {
+  display: block;
+  text-align: center;
+  width: 100%;
+}
+.red-tit {
+  font-size: 28rpx;
+  padding: 110rpx 0 24rpx;
+}
+.red-price {
+  font-size: 48rpx;
+  font-family: "PingFang-SC-Medium";
+}
+.red-time {
+  font-size: 20rpx;
+  padding: 20rpx 0 56rpx;
+  border-bottom: 0.67rpx dashed #fff;
+}
+.red-content {
+  font-size: 26rpx;
+  padding: 20rpx 0 20rpx;
+  width: 294rpx;
+  text-align: left!important;
+}
+/* 未使用内容 end */
+
+/* 没有红包 */
+.no-red {
+  width: 100%;
+  text-align: center;
+  padding: 536rpx 0;
+}
+.no-red>image {
+  width: 127.33rpx;
+	height:141.33rpx;
+}
+.no-red>text {
+  display: block;
+  color: #888888;
+  font-size: 32rpx;
+  margin-top: 40rpx;
+  font-family: "PingFang-SC-Regular";
+}

@@ -1,0 +1,151 @@
+/* pages/SaleService/salereturn/salereturn.wxss */
+view,image,text,navigator{
+  box-sizing: content-box;
+  padding:0;
+  margin:0;
+
+}
+.tip{
+  position: fixed;
+  top:50%;
+  left:50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+}
+.tip image{
+   width: 244rpx;
+   height: 177rpx;
+   margin-bottom: 40rpx;
+}
+.tip view{
+  color: #888888;
+  font-size: 32rpx;
+}
+/* list列表 */
+.list{
+  width: 100%; 
+  padding:24rpx 32rpx 0;  
+  background: #fff;
+  position: relative;
+  box-sizing: border-box;
+  overflow:hidden;
+}
+.list-check{
+  position: relative;
+	width: 36rpx;
+	height: 36rpx;
+  top:62rpx;
+  float: left;
+}
+checkbox{
+  width:36rpx;
+  height:36rpx;
+
+}
+.list-contain{
+
+  margin-left: 64rpx;
+
+}
+.list-contain image{
+   width: 160rpx;
+   height: 160rpx;
+   float: left;
+   margin-right: 22rpx;
+}
+.list-computed text{
+   float:left;
+}
+.money{
+  font-size: 32rpx;
+  color: #000000;
+}
+.list-computed view{
+  float: right;
+}
+.list-text .list-button text{
+  width: 89rpx;
+  height: 45rpx;
+  line-height: 45rpx !important;
+  text-align: center;
+  border-radius:0; 
+  border: 1rpx solid #888888;
+  color: #353535 !important;
+}
+.list-computed input{
+    width:83rpx;
+    height:41rpx;
+    border:1rpx solid #888888;
+    line-height:41rpx;
+    text-align: center;
+    font-size: 28rpx;
+    float: left;
+    min-height: 45rpx;
+}
+
+.list-text{
+  border-bottom:1px solid #dbdbdb;
+  padding-bottom: 24rpx;
+}
+.list-button text:nth-of-type(1){
+  float: left;
+}
+.list-text .title{
+  color: #353535;
+  font-size: 32rpx;
+}
+.list-text .decorate{
+  color: #888888;
+  font-size: 28rpx;
+  line-height: 28rpx;
+  margin-bottom:27rpx;
+  display: inline-block;
+  margin-top: 16rpx;
+
+}
+/* footer */
+.footer{
+  width: 100%;
+  position: fixed;
+  bottom: 0;
+  box-sizing: border-box;
+  height: 96rpx;
+  padding: 0 0 0 32rpx;
+  background: #fff;
+}
+.all-check {
+position:relative;
+width:36rpx;
+height:36rpx;
+top:32rpx;
+}
+
+.left{
+  float: left
+}
+.left text{
+position:relative;
+top:27rpx;
+color:#888888;
+left:15rpx;
+
+}
+.right{
+  float: right;
+}
+.right text{
+  float: left;
+  position: relative;
+  top:28rpx;
+  margin-right: 32rpx;
+}
+.right button{
+    height:96rpx;
+    display:inline-block;
+    width:224rpx;
+    line-height: 96rpx;
+    text-align: center;
+    color: #fff;
+    background-color: #ffcc00;
+    border-radius: 0;
+}

@@ -1,0 +1,20 @@
+/* pages/SaleService/service/service.wxss */
+.tip{
+  position: fixed;
+  top:50%;
+  left:50%;
+  width: 386rpx;
+  height: 231rpx;
+  margin-left: -193rpx;
+  margin-top: -115rpx;
+  text-align: center;
+}
+.tip image{
+   width: 244rpx;
+   height: 177rpx;
+   margin-bottom: 40rpx;
+}
+.tip view{
+  color: #888888;
+  font-size: 32rpx;
+}

@@ -1,0 +1,46 @@
+<!-- <view class="container">
+    <scroll-view class="topic-list" scroll-y="true" scroll-top="{{scrollTop}}">
+        <navigator class="item" wx:for="{{topicList}}" wx:key="{{item.id}}" url="../topicDetail/topicDetail?id={{item.id}}">
+            <image class="img" src="{{item.scene_pic_url}}"></image>
+            <view class="info">
+                <text class="title">{{item.title}}</text>
+                <text class="desc">{{item.subtitle}}</text>
+                <text class="price">{{item.price_info}}元起</text>
+            </view>
+        </navigator>
+        <view class="page" wx:if="{{showPage}}">
+            <view class="prev {{ page <= 1 ? 'disabled' : ''}}" bindtap="prevPage">上一页</view>
+            <view class="next {{ (count / size) < page +1 ? 'disabled' : ''}}" bindtap="nextPage">下一页</view>
+        </view>
+    </scroll-view>
+</view> -->
+<view class='classify' >
+  <navigator  wx:for="{{topicList}}" wx:key="{{item.id}}" class='contain' url="../topicDetail/topicDetail?id={{item.id}}" hover-class="navigator-hover">
+      <view class='classify-list'>
+        <image src="../../images/icon_02.png"></image>
+        <view class='classify-text'>
+          <text>的狸甄品\n</text>
+          <text>6小时前</text>
+        </view>
+
+      </view>
+      <view class="classify-item" >
+          <image src='../../images/05.png'></image>
+          <view class='item-container'>
+              <view class='item-text'>
+                <text>{{item.title}}</text>
+                <text>{{item.price_info}}元起</text>
+              </view>
+              <view class='item-intro'>
+                <text>{{item.subtitle}}</text>
+              </view>
+          </view>
+        </view>
+    </navigator >  
+  <view class="footer" wx:if="{{!hasMoreData}}">
+    没有更多了
+  </view>
+  <view class="footer" wx:if="{{hasMoreData}}">
+    加载中...
+  </view>  
+</view>

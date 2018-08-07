@@ -1,0 +1,56 @@
+<!--pages/SaleService/schedule/returnschedule.wxml-->
+<view class='header clearfix'>
+   <view style='background:url(../../../images/process_01.png);background-size:100% 100%;'>提交申请</view>
+    <view wx:for="{{process}}" style='{{item.check?"background:url(../../../images/process_02.png);color: #353535;":"background:url(../../../images/process_01.png);"}} background-size:100% 100%;'>{{item.text}}</view>
+     <view style='{{processover?"color: #353535;":"color: #007aff;"}}'>完成退款</view>
+</view>
+<view class='context'>
+      <view url="/pages/order_detail/detail" class='container clearfix'>
+            <image src="../../../images/06.png"></image>
+            <view class='intro'>
+               <view>透气呼吸纱四件套透气呼吸…</view>
+               <view>蓝色; 1.8米</view>
+            </view>
+      </view>
+      <view class='cancel clearfix' bindtap='handleshow'>
+        <text>{{text}}</text>
+        <image src='../../../images/down_more.png'></image>
+      </view>
+      <view class='q-list'>
+        <block wx:for="{{qlist}}" >
+           <block wx:if="{{!item.check}}">
+           <text  bindtap='handq' data-index="{{index}}" >{{item.text}}</text>
+            </block>
+           <block wx:else>
+         <text  bindtap='handq' data-index="{{index}}" style='background-image:url(../../../images/q_select.png);width:124rpx;height:48rpx;background-size:100% 100%;border:1px solid #fff;'>{{item.text}}</text>
+            </block>
+         </block>
+      </view>
+      <view class='evaluation'>
+         <textarea bindinput="inputvalue" bindblur="bindTextAreaBlur" maxlength="290"  class='content'  placeholder='为尽快处理您的售后申请，请填写详细描述（10~300字）'></textarea>
+         <text class="count">还可输入{{300 - count.length}}字符</text>
+      </view>
+      <view class='upload_container'>
+         <view class='uploadimg'>上传图片(最多4张)</view>
+                <view class="weui-uploader__bd clearfix">
+                  <view class="weui-uploader__files">
+                    <block wx:for="{{imageList}}" wx:for-item="image">
+                      <view class="weui-uploader__file clearfix">
+                        <image class="weui-uploader__img" src="{{image}}" data-src="{{image}}" bindtap="previewImage" data-index="{{index}}" ><image bindtap='handledel' data-index="{{index}}" class='del' src="../../../images/delete.png"></image></image>
+                      </view>
+                    </block>
+                  </view>
+                  <view class="weui-uploader__input-box" wx:if="{{imageList.length<4}}">
+                    <view class="weui-uploader__input" bindtap="chooseImage"><view></view><view></view></view>
+                  </view>
+                </view>
+      </view>
+</view>
+<view class='look_process'>
+  <navigator class='look'>
+   查看<text>《退换货流程》</text>
+   </navigator>
+</view>
+<view  class='submit' bindtap='handlesubmit'>提交</view>
+
+

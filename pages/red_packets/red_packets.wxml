@@ -1,0 +1,60 @@
+<!--pages/red_packets/red_ackets.wxml-->
+<!-- <text>pages/red_packets/red_ackets.wxml</text> -->
+<view class='red-packets'>
+  <view class='red-tab'>
+    <view class='tab-box'>
+      <block wx:for="{{['未使用','已使用','已失效']}}" wx:key="id"> 
+          <view class="tab-item {{currentTabsIndex == index ? 'selected': ''}}" data-index="{{index}}" bindtap='onTabsItemTap'>
+          <text class="{{currentTabsIndex == index ? 'selected': ''}}" data-index="{{index}}" bindtap='onTabsItemTap'>{{item}}</text>
+        </view>
+      </block>
+    </view>
+
+    <view class='detail-box'>
+      <view hidden='{{currentTabsIndex !==0}}'>
+
+        <view class='red-unused'>
+          <block wx:for="{{unusedList}}">
+             <view class='unused-item' style='background-image:url("../../images/red_packets_01.png");background-size:contain;width: 294rpx;height: 440rpx;'>
+                <text class='red-tit'>{{item.tit}}</text>
+                <text class='red-price'>{{item.price}}</text>
+                <text class='red-time'>{{item.time}}</text>
+                <text class='red-content'>{{item.content}}</text>
+             </view>
+          </block>
+        </view>
+
+        <view class='no-red' style='display:none'>
+          <image src='../../images/red_packets_03.png'></image>
+          <text>还没有红包哩~</text>
+        </view>
+
+      </view>
+      <view hidden='{{currentTabsIndex !==1}}'>
+        <view class='red-unused'>
+          <block wx:for="{{usedList}}">
+             <view class='unused-item' style='background-image:url("../../images/red_packets_02.png");background-size:contain;width: 294rpx;height: 440rpx;'>
+                <text class='red-tit'>{{item.tit}}</text>
+                <text class='red-price'>{{item.price}}</text>
+                <text class='red-time'>{{item.time}}</text>
+                <text class='red-content'>{{item.content}}</text>
+             </view>
+          </block>
+        </view>
+      </view>
+      <view hidden='{{currentTabsIndex !==2}}'>
+        <view class='red-unused'>
+          <block wx:for="{{failureList}}">
+             <view class='unused-item' style='background-image:url("../../images/red_packets_02.png");background-size:contain;width: 294rpx;height: 440rpx;'>
+                <text class='red-tit'>{{item.tit}}</text>
+                <text class='red-price'>{{item.price}}</text>
+                <text class='red-time'>{{item.time}}</text>
+                <text class='red-content'>{{item.content}}</text>
+             </view>
+          </block>
+        </view>
+      </view>
+    </view>
+    
+  </view>
+</view>

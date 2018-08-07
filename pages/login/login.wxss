@@ -1,0 +1,22 @@
+/* pages/login/login.wxss */
+.login_title{
+  width: 277rpx;
+  margin: 283rpx auto 0;
+  display:block;
+height:64rpx;
+
+}
+.userinfo{
+  width: 660rpx;
+  height: 84rpx;
+  line-height: 84rpx;
+  text-align: center;
+  background: #ffcc00;
+  color: #fff;
+  margin: 283rpx auto 0;
+}
+.button-hover {
+color:#fff;
+background-color:#ffcc00;
+
+}

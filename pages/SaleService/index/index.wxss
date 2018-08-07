@@ -1,0 +1,34 @@
+/* pages/SaleService/index/index.wxss */
+/* 列表 */
+.clearfix:after {
+  clear: both;
+  content:'';
+  height: 0;
+   display: block;
+}
+.list{
+  padding: 32rpx;
+  border-bottom: 1px solid #dbdbdb;
+}
+.list-left{
+   display: flex;
+   float: left;
+}
+.list-left image{
+  width: 32rpx;
+  height: 32rpx;
+  margin-right: 20rpx;
+}
+.list-left text{
+  font-size: 32rpx;
+  color: #353535;
+  line-height:30rpx;
+
+}
+.arrow{
+  float: right;
+  width: 14rpx;
+  height: 28rpx;
+  position: relative;
+  top:5rpx;
+}
